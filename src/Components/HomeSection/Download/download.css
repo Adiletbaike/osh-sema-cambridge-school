@@ -1,0 +1,50 @@
+.download {
+  background-color: #31b675;
+  color: white;
+  height: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.download h4 {
+  font-size: 15px;
+}
+
+.download p{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.download .report {
+  text-align: center;
+}
+
+.download .icons {
+  font-size: 50px;
+  color: #98dfbc;
+}
+
+.download .row {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+}
+
+@media screen and (max-width: 768px) {
+  .download .flex_space {
+    flex-direction: column;
+    padding: 40px;
+  }
+  .download .row {
+    width: 100%;
+  }
+  .download .row2 {
+    display: none;
+  }
+  .download {
+    height: 60vh;
+  }
+}

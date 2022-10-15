@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+.navbar {
+  background: #222222;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 10vh;
+  line-height: 10vh;
+}
+
+nav ul li {
+  display: inline-block;
+  transition: all 0.2s ease-out;
+  margin: 0 30px 0 0;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: 100;
+  font-size: 15px;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-out;
+  opacity: 0.8;
+  font-weight: 700;
+
+}
+nav ul li a:hover {
+  color: #31b675;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+nav i {
+  color: #fff;
+}
+.login-area {
+  color: white;
+}
+
+.login-area a {
+  font-weight: 100;
+  opacity: 0.8;
+  font-size: 13px;
+  color: #fff;
+}
+.login-area i {
+  margin: 0 5px 0 15px;
+  font-size: 13px;
+  color: #fff;
+}
+.login-area button {
+  margin-left: 20px;
+}
+
+.lang_flag {
+  background-color: #222222;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.lang_flag:hover {
+  color: #31b675;
+}
+@font-face {
+  font-family: NotoColorEmojiLimited;
+  unicode-range: U+1F1E6-1F1FF;
+  src: url(https://raw.githack.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf);
+}
+
+select {
+  font-family: 'NotoColorEmojiLimited', -apple-system, BlinkMacSystemFont, 
+  'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+select#lang option[value="en"]::before { background-color: red;}
+select#lang option[value="ky"]::before { background-image: url(../../../public/Images/kg.webp );}
+option[value=en]::before { 
+  background-color: yellow;
+  background-image: url(../../../public/Images/about-img-1.jpg);
+}
+
+.lang_flag::before {
+  background-image: url(../../../public/Images/us.webp);
+  width: 10px;
+  height: 10px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .login-area {
+    position: absolute;
+    right: 20px;
+  }
+  .navbar {
+    text-align: center;
+  }
+  nav ul {
+    display: block;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul.active {
+    background: #31b675;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 100;
+  }
+  nav ul li a {
+    font-weight: 400;
+    opacity: 1;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    font-size: 2rem;
+  }
+}
+/*--------header------------*/
+header {
+  padding: 20px 0 5px 0;
+  background-color: #fff;
+}
+header .box {
+  margin: 0 0 0 30px;
+}
+header a {
+  font-size: 13px;
+  color: grey;
+}
+header i {
+  font-size: 40px;
+  color: #31b675;
+  margin-right: 15px;
+}
+header .text {
+  margin-top: 10px;
+}
+header h4 {
+  line-height: 10px;
+}
+
+/*--------header------------*/
+@media screen and (max-width: 768px) {
+  /*--------header--------*/
+  header .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .contact {
+    justify-content: center;
+    align-items: center;
+  }
+  header a {
+    font-size: 13px;
+  }
+  header i {
+    font-size: 30px;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+  /*--------header--------*/
+}
